@@ -19,9 +19,11 @@
 # ? Resolução:
 
 from random import randint
+from time import sleep
 comp = randint(0, 5)
 print('-=-' * 20)
 print('Estou pensando em um número entre 0 e 5...')
+sleep(3)
 print('Ok! Já pensei')
 print('-=-' * 20)
 # print('Número sorteado: {}'.format(comp))
