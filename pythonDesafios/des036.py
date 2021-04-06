@@ -16,7 +16,7 @@ print('\033[mO valor da prestação em \033[33m{}\033[m vezes é de \033[36mR$ {
 print('O valor mínimo para o pagamento em \033[33m{}\033[m vezes é de \033[36mR$ {:.2f}\033[m mensais'.format(
     nprest, vmin))
 if vmin < vprest:
-    print('O empréstimp foi \033[31mNEGADO\033[m.')
+    print('O empréstimo foi \033[31mNEGADO\033[m.')
     print('\033[35mTente com mais prestações.\033[m')
 else:
     print('O empréstimo foi \033[32mAPROVADO!\033[m')

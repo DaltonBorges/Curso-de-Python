@@ -14,7 +14,7 @@ if m < 5.0:
 elif m >= 5.0 and m <= 6.9:
     print('Sua média foi {}. Aluno em \033[33mRECUPERAÇÃO.\033[m'.format(m))
     print('Ainda há tempo de se esforçar! Concentre-se!')
-elif m > 7.0:
+elif m >= 7.0:
     print('Sua média foi {}. Aluno \033[32mAPROVADO!\033[m'.format(m))
     print('Parabéns! Continue assim!')
 print("BONS ESTUDOS!")

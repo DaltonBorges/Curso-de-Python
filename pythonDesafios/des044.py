@@ -6,30 +6,34 @@
 #* 3x ou mais no cartão: 20% de juros
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
-
-valor = float(input('Valor do produto: '))
-print('\033[33m='*40)
-print('\033[33mÀ vista - dinheiro ou cheque: digite \033[36m1\033[m')
-print('\033[33mÀ vista - no cartão: digite \033[36m2\033[m')
-print('\033[33mEm até 2x no cartão: digite \033[36m3\033[m')
-print('\033[33mEm 3x ou mais no cartão: digite \033[36m4\033[m')
-print('\033[33m='*40)
+print('{:=^40}'.format('| LOJAS BORGES |'))
+valor = float(input('Valor da compra: '))
+print('\033[33m='*35)
+print('[ \033[36m1\033[m \033[33m] À vista / dinheiro ou cheque')
+print('[ \033[36m2\033[m \033[33m] À vista - no cartão')
+print('[ \033[36m3\033[m \033[33m] 2x no cartão')
+print('[ \033[36m4\033[m \033[33m] 3x ou mais no cartão')
+print('\033[33m='*35)
 forma = int(input('\033[mQual a forma de pagamento? '))
-vistad = valor - (valor * 10 / 100)
-vistac = valor - (valor * 5 / 100)
-div3c = valor + (valor * 20 /100)
 if forma == 1:
-    print('Para pagamento à vista, em dinheiro ou em cheque, o valor fica em \033[32mR$ {:.2f}\033[m.'.format(vistad))
-    print('='*70)
+    total = valor - (10 / 100 * valor)
 elif forma == 2:
-    print('Para pagamento à vista, no cartão, o valor fica em \033[32mR$ {:.2f}\033[m.'.format(vistac))
-    print('='*70)
+    total = valor - (5 / 100 * valor)
 elif forma == 3:
-    print('Para pagamento em até 2x no cartão, o valor continua \033[32mR$ {:.2f}\033[m.'.format(valor))
-    print('='*70)
+    total = valor
+    parc = total / 2
+    print('Sua compra será parcelada em 2x de R$ { sem juros'.format(parc))
 elif forma == 4:
-    print('Para pagamento em 3x ou mais no cartão, o valor total é de \033[32mR$ {:.2f}\033[m.'.format(div3c))
-    print('='*70)
+    total = valor + (20 / 100 * valor)
+    totparc = int(input('Quantas parcelas?: '))
+    parc = total / totparc
+    print('Sua compra será parcelada em {}x de R$ {:.2f} com juros.'.format(totparc, parc))
+else:
+    total = valor
+    print('\033[31mForma de pagamento inválida. Tente novamente, digitando a opção correta.\033[m')
+        
+print('Sua compra de R$ {} vai custar R$ {} no final.'.format(valor, total))
+
 
 
 #* Funcionou!
