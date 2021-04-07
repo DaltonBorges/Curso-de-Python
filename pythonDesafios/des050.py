@@ -4,7 +4,7 @@
 #-----------------------------------------------
 s = 0
 for num in range(1,7):
-    num = int(input('Digite um número: '))
+    num = int(input('Digite o {}º valor: '.format(num)))
     if num % 2 == 0:
         s += num
 print('·'*40)
