@@ -4,4 +4,31 @@
 #* Até 14 anos: INFANTIL
 #* Até 19 anos: JÚNIOR
 #* Até 20 anos: SÊNIOR
+<<<<<<< Updated upstream
 #* Acima: MASTER
+=======
+#* Acima: MASTER
+
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
+
+from datetime import datetime
+
+nasc = int(input('Digite o ano de nascimento: '))
+hoje = datetime.now().year
+idade = hoje - nasc
+print('-=-'*15)
+if idade <= 9:
+    print('A idade é de \033[36m{} anos\033[m. A categoria é \033[36mMIRIM\033[m.'.format(idade))
+elif idade <= 14:
+    print('A idade é de \033[34m{} anos\033[m. A categoria é \033[34mINFANTIL\033[m.'.format(idade))
+elif idade <= 19:
+    print('A idade é de \033[32m{} anos\033[m. A categoria é \033[32mJÚNIOR\033[m.'.format(idade))
+elif idade <= 25:
+    print('A idade é de \033[37m{} anos\033[m. A categoria é \033[37mSÊNIOR\033[m.'.format(idade))
+else:
+    print('A idade é \033[35macima de 25 anos\033[m. A categoria é \033[35mMASTER\033[m.')
+    
+
+#* Funcionou!    
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
+>>>>>>> Stashed changes

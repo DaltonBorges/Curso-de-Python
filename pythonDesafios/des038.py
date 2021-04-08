@@ -3,7 +3,7 @@
 #* - O segundo valor é maior  ou...
 #* - Não existe valor maior. os dois são iguais
 
-#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
 
 v1 = int(input("Digite o primeiro valor: "))
 v2 = int(input('Digite o segundo valor: '))
@@ -16,4 +16,5 @@ else:
 
 
 # * Funcionou!
-#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
+

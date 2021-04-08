@@ -1,7 +1,8 @@
 # Escreva um programa para aprovar o empréstimo bancário para a compra de uma casa. Oprograma vai perguntar o valor da casa, o salário do comprador e em quantos anos ele vai pagar.
 # * Calcule o valor da prestação mensal, sabendo que ela não pode exceder 30% do salário ou, então, o empréstimo será negado.
 
-#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
+
 
 print('\033[0;36m-=-\033[m'*20)
 print('\033[32m     A N A L I S A D O R    D E    E M P R É S T I M O S\033[m')
@@ -23,4 +24,5 @@ else:
     
 
 # * Funcionou!
-#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
+
