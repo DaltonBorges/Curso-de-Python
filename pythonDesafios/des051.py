@@ -8,6 +8,7 @@ print('·'*20)
 t = int(input('Primeiro termo: '))
 r = int(input('Razão: '))
 qtd = t + (10 - 1) * r
+
 for pa in range(t, qtd + r, r):
     print(pa, end=' -> ')
 print('FIM.')
