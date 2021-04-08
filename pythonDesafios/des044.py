@@ -3,9 +3,7 @@
 #* À vista: dinheiro / cheque: 10% de desconto
 #* À vista no cartão: 5% de desconto
 #* em até 2x no cartão: preço normal
-<<<<<<< Updated upstream
 #* 3x ou mais no cartão: 20% de juros
-=======
 #* 3x ou mais no cartão: 20% de juros
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
@@ -39,7 +37,5 @@ else:
 print('Sua compra de R$ {} vai custar R$ {} no final.'.format(valor, total))
 
 
-
 #* Funcionou!
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
->>>>>>> Stashed changes

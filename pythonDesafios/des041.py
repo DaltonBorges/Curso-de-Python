@@ -4,9 +4,7 @@
 #* Até 14 anos: INFANTIL
 #* Até 19 anos: JÚNIOR
 #* Até 20 anos: SÊNIOR
-<<<<<<< Updated upstream
 #* Acima: MASTER
-=======
 #* Acima: MASTER
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
@@ -31,4 +29,3 @@ else:
 
 #* Funcionou!    
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
->>>>>>> Stashed changes
