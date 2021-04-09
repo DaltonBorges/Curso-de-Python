@@ -1,6 +1,6 @@
 # Faça um programa que leia três número e mostre qual é o maior e qual é o menor.
 
-# ? Resolução:
+#¨ Resolução:
 
 a = int(input('Digite um número: '))
 b = int(input('Digite outro número: '))
