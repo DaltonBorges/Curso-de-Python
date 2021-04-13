@@ -2,9 +2,7 @@
 
 #* Equilátero: todos os lados iguais
 #* Isósceles: dois lados iguais
-<<<<<<< Updated upstream
 #* Escaleno: Todos os lados diferentes
-=======
 #* Escaleno: Todos os lados diferentes
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
@@ -30,4 +28,3 @@ else:
     
     
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
->>>>>>> Stashed changes

@@ -6,7 +6,7 @@
 #* 30 até 40: Obesidade
 #* Acima de 40: Obesidade mórbida
 
-#! Como calcular IMC ?
+#! Como calcular IMC:
 #¨ imc = peso / (altura ** 2)
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
 

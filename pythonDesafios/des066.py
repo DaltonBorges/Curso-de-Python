@@ -9,3 +9,7 @@ while True:
     cont += 1
     soma += num
 print(f'Total de {cont} números digitados e a soma entre eles é: {soma}.')
+
+
+#* Funcionou!
+#---------------------------------------------------
