@@ -3,7 +3,7 @@
 Ex:
 0 -> 1 -> 1 -> 2 -> 3 -> 5 -> 8
 '''
-# ? RESOLUÇÃO DESSA PORRA!
+#? Resolução:
 
 print('-' * 30)
 print('SEQUÊNCIA DE FIBONACCI')
