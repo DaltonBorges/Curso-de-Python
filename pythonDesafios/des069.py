@@ -5,3 +5,21 @@
 
 #----------------------------------------------------
 
+cont = 0
+fem = 0
+masc = 0
+while True:
+    idade = int(input('Idade: '))
+    sexo = str(input('Sexo [M/F]:')).strip().upper()[0]
+    cont += 1
+    if sexo == 'F':
+        fem += 1
+    if sexo == 'M':
+        masc += 1
+    segue = str(input('Deseja inserir mais cadastros? [S/N]')).strip().upper()[0]
+    if segue == 'S':
+        idade = int(input('Idade: '))
+        sexo = str(input('Sexo [M/F]:')).strip().upper()[0]
+        cont += 1
+
+print('Fim')

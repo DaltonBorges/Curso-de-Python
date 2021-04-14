@@ -1,7 +1,7 @@
 # Faça um programa que mostre a tabuada de vários números, um de cada vez, para cada valor digitado pelo usuário. O programa será interrompido quando o númeo solicitado for negativo.
 
 #---------------------------------------------------
-
+'''
 while True:
     num = int(input('dígite um número para ver sua taubada: '))
     if num < 0:
@@ -22,6 +22,19 @@ while True:
     print(':'*15)
 print('Programa encerrado.')
 
-
+'''
 #* Funcionou!
 #---------------------------------------------------
+
+#? Resolução:
+
+while True:
+    num = int(input('dígite um número para ver sua taubada: '))
+    if num < 0:
+        break
+    print(f'\n Tabuada do {num}:')
+    print(':'*15)
+    for c in range(0, 11):
+        print(f'{num} x {c:2} = {num * c}')
+    print(':'*15)
+print('Programa encerrado.')

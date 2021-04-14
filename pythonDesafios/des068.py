@@ -8,7 +8,15 @@ cont = 0
 while True:
     comp = randint(0, 999)
     palpite = str(input('PAR ou ÍMPAR [P/I]? ')).strip().upper()
+    while palpite not in 'P' and palpite not in 'I':
+        print('Opção inválida. Digite P ou I.')
+        palpite = str(input('PAR ou ÍMPAR [P/I]? ')).strip().upper()
     num = int(input('Escolha um número: '))
+    '''
+    while palpite == str: #! Não consegui resolver
+        print('Opção inválida. Digite um número inteiro.')
+        num = int(input('Escolha um número: '))
+    '''
     res = (num + comp) % 2
     print(f'Eu escolhi {comp} e você escolheu {num}.')
     if res == 0 and palpite in 'Pp':
