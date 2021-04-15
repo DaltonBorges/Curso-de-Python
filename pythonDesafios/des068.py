@@ -6,17 +6,17 @@ from random import randint
 
 cont = 0
 while True:
-    comp = randint(0, 999)
+    comp = randint(0, 99)
     palpite = str(input('PAR ou ÍMPAR [P/I]? ')).strip().upper()
-    while palpite not in 'P' and palpite not in 'I':
+    while palpite not in 'PI':
         print('Opção inválida. Digite P ou I.')
         palpite = str(input('PAR ou ÍMPAR [P/I]? ')).strip().upper()
-    num = int(input('Escolha um número: '))
-    '''
-    while palpite == str: #! Não consegui resolver
-        print('Opção inválida. Digite um número inteiro.')
-        num = int(input('Escolha um número: '))
-    '''
+    while True: 
+        try:    # Resolvido com Stack Overflow (não foi mostrado em aula)
+            num = int(input('Escolha um número: '))
+            break
+        except ValueError:
+            print("Não é um número!")
     res = (num + comp) % 2
     print(f'Eu escolhi {comp} e você escolheu {num}.')
     if res == 0 and palpite in 'Pp':
@@ -38,3 +38,33 @@ print('>>>>> GAME OVER <<<<<')
 
 #* Funcionou!
 #----------------------------------------------------
+
+#? Resolução (não valida o número):
+'''
+from random import randint
+v = 0
+while True:
+    jogador = int(input('Diga um valor: '))
+    computador = randint(0, 10)
+    total = jogador + computador
+    tipo = ''
+    while tipo not in 'PI':
+        tipo = str(input('PAR ou ÌMPAR? [P/I]: ')).strip().upper()[0]
+    print(f'Você jogou {jogador} e o computador jogou {computador}. Total de {total}.', end='')
+    print('Deu PAR' if total % 2 == 0 else 'Deu ÍMPAR')
+    if tipo == 'P':
+        if total % 2 == 0:
+            print('Você VENCEU!')
+            v += 1
+        else:
+            print('Você PERDEU')
+            break
+    elif tipo == 'I':
+        if total % 2 == 1:
+            print('Você VENCEU!')
+            v += 1
+        else:
+            print('Você PERDEU!')
+            break
+    print('Vamos jogar novamente!')
+    '''

@@ -3,7 +3,7 @@
 #----------------------------------------------
 
 resp = 'S'
-cont = soma = maior = menor =0
+cont = soma = maior = menor = 0
 while resp in 'Ss':
     num = int(input('Digite um número: '))
     resp = str(input('Deseja continuar? [S/N]')).upper().strip()[0]
