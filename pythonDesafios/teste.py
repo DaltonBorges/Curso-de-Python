@@ -7,3 +7,5 @@
 # Todo: teste
 #! Alert
 #? Questão
+
+print('{:=^45}'.format('| TÍTULO |'))

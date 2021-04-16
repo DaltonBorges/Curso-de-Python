@@ -4,3 +4,23 @@
 #* C) Uma lista com os times em ordem alfabética.
 #* D) Em que posição na tabela está o time da Chapecoense.
 #----------------------------------------------------
+
+tabela = ('São Paulo', 'América-MG', 'Athletico-PR', 'Atlético-GO', 'Atlético-MG', 'Bahia', 'Bragantino','Ceará', 'Chapecoense', 'Corinthians', 'Cuiabá', 'Flamengo', 'Fluminense', 'Fortaleza', 'Grêmio', 'Internacional', 'Juventude', 'Palmeiras', 'Santos', 'Sport')
+
+print('-'*40)
+print('Os 5 primeiros colocados são:')
+print(tabela[0:5])
+print('-'*40)
+print('Os 4 últimos colocados são:')
+print(tabela[-4:])
+print('-'*40)
+print('Times em ordem alfabética:')
+print(sorted(tabela))
+print('-'*40)
+for p, c in enumerate(tabela):
+    if c == 'São Paulo':
+        print(f'Chapecoense está na posição {p+1} da tabela')
+
+       
+#* Acho que fiz uma gambiarra, mas funcionou!
+#----------------------------------------------------
