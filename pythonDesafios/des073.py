@@ -17,9 +17,13 @@ print('-'*40)
 print('Times em ordem alfabética:')
 print(sorted(tabela))
 print('-'*40)
+'''
 for p, c in enumerate(tabela):
-    if c == 'São Paulo':
-        print(f'Chapecoense está na posição {p+1} da tabela')
+    if c == 'Chapecoense':
+        print(f'Chapecoense está na {p+1}ª posição  da tabela')
+'''
+#? Correção:
+print(f'O Chapecoense está na {tabela.index("Chapecoense") + 1}ª posição')
 
        
 #* Acho que fiz uma gambiarra, mas funcionou!
