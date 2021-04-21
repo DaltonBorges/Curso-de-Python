@@ -11,7 +11,7 @@ print(f'O menor digitado foi: {min(números)}.')
 
 '''
 #* Funcionou!
-#todo Esqueci das cições!
+#todo Esqueci das posições!
 #----------------------------------------------
     
 #? Resolução:
